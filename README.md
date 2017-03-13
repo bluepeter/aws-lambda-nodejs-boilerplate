@@ -12,5 +12,5 @@ Lamnbda Lambda Lambda, can I helpya, helpya, helpya?
 6. Let's talk Lambda versioning and aliases. Create two Lambda aliases...
    `PROD` and `STAG`. Point `STAG` to `$latest` version. Now let's talk about
    `PROD`...
-7. `./updateProd.sh` will create a new version from `$latest` and point `PROD`
+7. Edit this file first to include your Lambda function name... `./updateProd.sh` will create a new version from `$latest` and point `PROD`
    alias to that version. Yay.
