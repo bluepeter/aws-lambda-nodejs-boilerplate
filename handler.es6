@@ -1,7 +1,6 @@
 import aws    from 'aws-sdk';
 import async  from 'async';
 import bunyan from 'bunyan';
-import debug  from 'debug';
 
 aws.config.region = 'us-east-1';
 
