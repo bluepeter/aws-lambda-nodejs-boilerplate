@@ -1,4 +1,4 @@
-Lamnbda Lambda Lambda, can I helpya, helpya, helpya?
+Lambda Lambda Lambda, can I helpya helpya helpya?
 
 1. Install aws-sdk and node-lambda globally.
 2. Configure aws-sdk in your home directory and ensure the Lambda-controlling
