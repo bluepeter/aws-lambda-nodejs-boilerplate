@@ -1,4 +1,6 @@
-This is a simple Node.js AWS Lambda seed to get you going with AWS Lambda.
+# Simple AWS Lambda Node.js Boilerplate
+
+This is a simple Node.js AWS Lambda seed to get you going.
 
 ### Basic
 
