@@ -1,22 +1,28 @@
 # Simple AWS Lambda Node.js Boilerplate
 
-This is a simple Node.js AWS Lambda seed to get you going.
+This is a simple Node.js AWS Lambda seed to get you going. It uses
+[node-lambda](https://github.com/motdotla/node-lambda) for locally running and
+deploying. It logs with Bunyan, and has a simple async waterfall in it's
+`index.js` to give you one approachin handling flow control in a Lambda
+function.
 
 ### Basic
 
-1. Install aws-sdk: `npm i -g aws-sdk`
-2. `npm i` in repo directory.
-3. Try it out! `npm run start` to run locally. Everything works, right? Good!
+1. `npm i -g aws-sdk` to install AWS SDK if you haven't already.
+2. `npm i` in repo directory to build node modules.
+3. `npm run start` to try it out (locally)! Everything works, right? Good!
    Let's get it into the cloud...
 4. Configure aws-sdk in your home directory. Ensure the Lambda-controlling
    `aws_access_key_id` and `aws_secret_access_key` are in, e.g., `~/.aws`. This
    way you don't have to keep this in `.env` which I prefer to keep in version
    control.
-5. Create a Lambda function on AWS. Edit `.env` and `package.json` to reflect
-   the Lambda function name and ARN.
+5. Create a Lambda function on AWS. Edit first two lines of `.env`; and
+   function name in `package.json` to reflect the Lambda function name and ARN.
 6. `npm run deploy` to push into the cloud...
 7. Go to AWS Lambda console and test if it works. It does, right? Great! Start
-   editing `index.js` to whatever you want.
+   editing `index.js` to whatever you want. You can mock data in `event.json`.
+   Look at `deploy.env.example` if you want to send along secret variables
+   (change name to `deploy.env`) that don't go to git.
 
 ### Advanced
 

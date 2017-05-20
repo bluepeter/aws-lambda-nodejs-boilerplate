@@ -41,7 +41,7 @@ class LambdaFunction {
 
   returnJson(lambdaCallback, err) {
     if (err === null || err === undefined) {
-      lambdaCallback();
+      lambdaCallback(null, "We succeeded.");
     } else {
       lambdaCallback(err);
     }
