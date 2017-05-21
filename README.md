@@ -16,8 +16,8 @@ function.
    `aws_access_key_id` and `aws_secret_access_key` are in, e.g., `~/.aws`. This
    way you don't have to keep this in `.env` which I prefer to keep in version
    control.
-5. Create a Lambda function on AWS. Edit first two lines of `.env`; and
-   function name in `package.json` to reflect the Lambda function name and ARN.
+5. Create a Lambda function on AWS. Edit `.env` to your Lambda function; and
+   function name in `package.json`.
 6. `npm run deploy` to push into the cloud...
 7. Go to AWS Lambda console and test if it works. It does, right? Great! Start
    editing `index.js` to whatever you want. You can mock data in `event.json`.
