@@ -21,7 +21,7 @@ class LambdaFunction {
         }
       ],
       (...args) => {
-        this.returnJson(lambdaCallback, ...args);
+        this.finishLambda(lambdaCallback, ...args);
       }
     );
   }
@@ -39,7 +39,7 @@ class LambdaFunction {
     callback(null);
   }
 
-  returnJson(lambdaCallback, err) {
+  finishLambda(lambdaCallback, err) {
     if (err === null || err === undefined) {
       lambdaCallback(null, "We succeeded.");
     } else {
